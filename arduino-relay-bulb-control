@@ -1,0 +1,13 @@
+int relayPin = 7;  // Relay IN pin Arduino ke pin 7 se connected
+
+void setup() {
+  pinMode(relayPin, OUTPUT);  // Relay pin ko output banaya
+}
+
+void loop() {
+  digitalWrite(relayPin, LOW);  // Relay ON (bulb ON)
+  delay(5000);                  // 5 second wait
+
+  digitalWrite(relayPin, HIGH); // Relay OFF (bulb OFF)
+  delay(5000);                  // 5 second wait
+}
